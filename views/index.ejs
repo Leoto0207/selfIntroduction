@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="https://kit.fontawesome.com/3e9d56a705.js" crossorigin="anonymous"></script>
+    <title>Leo To Porfolio</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a id="brand" class="navbar-brand" href="/">LeoTo Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#intro">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+      <header>
+          <section id="intro" class='intro'>
+            <div class="cover">
+              <!-- small pieces of symbols -->
+              <div class="fade-in">
+                <img src="/img/self.jpg" alt="self picture">
+              </div>
+              <div id='header' class="fade-in">
+                <h1 class="text-center m-3">Hi, This is Leo</h1>
+                <div class="introduction">
+                  <h4>
+                    A full-stack <span id="word">Web Developer<span>.
+                  </h4>
+                  <p class="text-muted">You may find my self-introduction and web projects here. Please contact me if any web application jobs offer.</p>
+                  <a type="button" class="mb-5 float-left btn btn-outline-danger" href="#contact_me">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      </div>
+      <main class="container">
+        <section id="aboutMe" class="aboutMe fading">
+        
+          <h1 class="text-center title">About Me</h1>
+          <div class="more-stuff-grid ">
+            <p class="slide-in from-left">My undergraduate was religious studies in Hong Kong. 
+              After graduation, I tried different jobs and worked as marketer. 
+              When I studied in digital marketing, I found coding interesting and amazing. 
+              Therefore, I started to learn web development on Udemy from zero.
+              The most difficult part in learning coding from zero is that I do a web app myself rather than just copy the code.
+              Finally, I created some projects and this portfolio. Now I am studying Master of Science in Computer Science and hope this helps me to start a new journey on web development career.
+            </p>
+            <img class="slide-in from-right" src="img/parkatnight.jpg" alt="park at Kln west">
+   
+        </section>
+        <section id="skills" class="skills fading">
+          <div id="skills-content" class="container">
+            <h1 class="text-center title">Skills</h1>
+            <div class="row justify-content-around">  
+              <div class="text-center col-md-6">
+                <i class="fab fa-html5 fa-5x"></i>
+                <p>HTML 5</p>
+              </div>
+              <div class="text-center col-md-6">
+                <i class="fab fa-css3 fa-5x"></i>
+                <p>CSS3</p>
+              </div>
+              <div class="text-center col-md-6">
+                <i class="fab fa-js fa-5x"></i>
+                <p>Javascript</p>
+              </div>
+              <div class="text-center col-md-6">
+                <i class="fab fa-react fa-5x"></i>
+                <p>React JS</p>
+              </div>
+              <div class="text-center col-md-6">
+                <i class="fab fa-node fa-5x"></i>
+                <p>NodeJS</p>
+              </div>
+              <div class="text-center col-md-6">
+                <i class="fas fa-database fa-5x"></i>
+                <p>MongoDB</p>
+              </div>
+              <div class="text-center col-md-6">
+                <i class="fab fa-bootstrap fa-5x"></i>
+                <p>Bootstrap</p>
+              </div>
+              <div class="text-center col-md-6">
+        
+              </div>
+          </div>
+          
+        </section>
+
+        <section id="project" class="project fading">
+          <div class="container">
+          <h1 class="text-center title">Project</h1>
+          <div id="project-content" class="row justify-content-around">
+              <div class="col-md-5 card border-danger mt-4">
+                <img src="/img/yelpcamp.jpg" class="card-img-top" alt="yelpcamp">
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">YelpCamp Project</h5>
+                  <h6 class="card-subtitle mb-2 text-muted text-uppercase">HTML, CSS, JS, NodeJS, bootstrap. mongodb, cloudinary, Mapbox, Heroku</h6>
+                  <p class="card-text">YelpCamp web app is a campsite social media platform. 
+                    It allows camping lovers to share their camping expereince.
+                    The app requests an user to register and login. 
+                    User can create, edit and delete his or her campsite post. 
+                    Also review function is provided so every users is able to leave comments. 
+                    The map is also convenient for user to search locations.</p>
+                  <a href="https://github.com/Leoto0207/yelpcamp.io" class="btn btn-outline-primary">Code</a>
+                  <a href="https://sheltered-garden-48998.herokuapp.com/" class="btn btn-outline-danger">Review</a>
+                </div>
+              
+            </div>
+            <div class="col-md-5 card border-danger mt-4">
+              <img src="/img/colorgame.jpg" class="card-img-top" alt="Colorgame">
+              <div class="card-body">
+                <h5 class="card-title text-capitalize">Color Game</h5>
+                <h6 class="card-subtitle mb-2 text-muted text-uppercase">HTML, CSS, JS, NodeJS, bootstrap</h6>
+                <p class="card-text">This is a colorgame app. With 5 rounds and two levels, if the player choose the right color, the score will be gained.</p>
+                <a href="https://github.com/Leoto0207/colorgame.io" class="btn btn-outline-primary">Code</a>
+                  <a href="https://leoto0207.github.io/color_game.github.io/" class="btn btn-outline-danger">Review</a>
+              </div>
+            </div>
+    
+            <div class="col-md-5 card border-danger mt-4">
+              <img src="/img/travel.jpg" class="card-img-top" alt="Mountaintravel">
+              <div class="card-body">
+                <h5 class="card-title text-capitalize">Mountain Travel</h5>
+                <h6 class="card-subtitle mb-2 text-muted text-uppercase">html, css</h6>
+                <p class="card-text">This is a travel website with Flexbox and animiation skills.</p>
+                <a href="https://github.com/Leoto0207/MountainTravel" class="btn btn-outline-primary">Code</a>
+                  <a href="https://leoto0207.github.io/MountainTravel/" class="btn btn-outline-danger">Review</a>
+              </div>
+            </div>
+            <div class="col-md-5 card border-danger mt-4">
+              <img src="/img/rag.jpg" class="card-img-top" alt="responsive advice game">
+              <div class="card-body">
+                <h5 class="card-title text-capitalize">Phrases Pop Up App</h5>
+                <h6 class="card-subtitle mb-2 text-muted text-uppercase">HTML, CSS, JS, API</h6>
+                <p class="card-text">This app is to pop up different phrases when an user click the button.</p>
+                <a href="https://github.com/Leoto0207/RAG.github.io" class="btn btn-outline-primary">Code</a>
+                  <a href="https://leoto0207.github.io/RAG/" class="btn btn-outline-danger">Review</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section id="contact_me" class="contact fading">
+          <h1 class="text-center title">Contact Me</h1>
+          <form action="/add_contact" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Username</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Contact person.">
+            </div>
+            <div class="mb-3">
+              <label for="company" class="form-label">Company (If any)</label>
+              <input type="text" class="form-control" id="company" name="company" placeholder="Company name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email Address">
+            </div>
+            <div class="mb-3">
+              <label for="contact">Contact</label>
+              <input type="text" class="form-control" id="contact" name="contact" placeholder="Phone No.">
+            </div>
+            <button class="btn btn-danger form-control mt-5">Submit</button>
+          </form>
+        </section>
+
+      
+      </main>
+     
+      <footer class="footer">
+        <div class="socialMedia">
+            <a href="https://github.com/Leoto0207"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.facebook.com/leo.to.75"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/ka-kin-to-968698112/"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+          <div>
+            <p class="text-white">&copy; by LeoTo </p>
+          </div>
+          
+      </footer>
+      <script src="js/index.js"></script>
+
+</body>
+</html>
