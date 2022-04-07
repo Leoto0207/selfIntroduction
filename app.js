@@ -32,7 +32,7 @@ app.post('/add_contact', async (req, res) => {
     }
 });
 
-
-app.listen(3000, function(){
-    console.log('the app started at port 3000');
+const port = process.env.PORT || 3000;
+app.listen(port, function(){
+    console.log(`the app started at port ${port}`);
 })
