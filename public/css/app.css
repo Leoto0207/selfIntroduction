@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
-body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
+html, body {
   overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,6 +14,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {
@@ -75,6 +85,7 @@ section.intro div.cover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 0 0 25px 25px;
 }
 
 section.intro #header {
@@ -142,15 +153,6 @@ section.aboutMe div.more-stuff-grid > img {
   height: 100%;
 }
 
-#skills-content {
-  background: rgba(0, 0, 0, 0.1);
-  padding: 20px 0px;
-}
-
-i.fas, i.fab {
-  margin: 15px;
-}
-
 .from-left {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -184,6 +186,13 @@ i.fas, i.fab {
   opacity: 1;
 }
 
+#skills-content {
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px 0px;
+  border-bottom: 3px solid #F05D5e;
+}
+
 section.project .card-img-top {
   width: auto;
   min-height: 250px;
@@ -194,10 +203,15 @@ section.project .card-title {
   color: #F05D5e;
 }
 
+section.project i.fas, section.project i.fab {
+  margin: 15px;
+}
+
 section.contact {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1em 2em;
   border-radius: 20px;
+  border-bottom: 3px solid #F05D5e;
 }
 
 section.contact label {
@@ -281,14 +295,14 @@ section.contact button {
 }
 
 @media screen and (max-width: 1000px) {
+  nav .nav-link {
+    border-bottom: none;
+  }
   section.intro h1 {
     font-size: 25px;
   }
   section.intro .introduction h4 {
     font-size: 20px;
-  }
-  .nav-link {
-    border-bottom: none;
   }
   section.intro .cover {
     display: -webkit-box;
@@ -308,6 +322,9 @@ section.contact button {
   }
   section.intro .cover > #header {
     margin: 10px 10px;
+  }
+  section.intro div.cover img {
+    width: 20rem;
   }
   section.aboutMe {
     margin-bottom: 7rem;
@@ -332,6 +349,12 @@ section.contact button {
   }
   .footer a {
     margin: 0 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body, html {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=app.css.map */

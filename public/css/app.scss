@@ -2,12 +2,18 @@
 
 $background-color: rgba(0, 0, 0, 0.1);
 
-body {
-    margin: 0;
+html,body{
+    overflow-x: hidden; 
+}
+
+body { 
+    margin: 0px;
+    padding: 0px;
     font-family: "Open Sans", sans-serif;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section{
@@ -65,6 +71,7 @@ section.intro {
         border-bottom: 3px solid #F05D5e;
         display: flex;
         align-items: center; 
+        border-radius: 0 0 25px 25px;
     }
     #header{
         display: flex;
@@ -113,16 +120,6 @@ section.aboutMe {
     }
 }
 
-#skills-content{
-    background:rgba(0, 0, 0, 0.1);
-    padding: 20px 0px;
-}
-
-i.fas, i.fab{
-    margin: 15px;
-}
-
-
 .from-left {
     grid-column: 2 / 3;
     transform: translateX(-50%);
@@ -147,6 +144,16 @@ i.fas, i.fab{
     opacity: 1;
 }
 
+#skills-content{
+        border-radius: 25px;
+        background:rgba(0, 0, 0, 0.1);
+        padding: 20px 0px;
+        border-bottom: 3px solid #F05D5e;
+
+}
+
+
+
 section.project{
     .card-img-top{
         width: auto;
@@ -156,12 +163,18 @@ section.project{
         font-weight: 700;
         color: #F05D5e;
     }
+    
+    
+    i.fas, i.fab{
+        margin: 15px;
+    }
 }
 
 section.contact{
     background-color: $background-color;
     padding: 1em 2em;
     border-radius: 20px;
+    border-bottom: 3px solid #F05D5e;
     label{
         font-size: 20px;
     }
@@ -219,7 +232,15 @@ section.contact{
 
 
 @media screen and (max-width: 1000px){
-    section.intro{
+   
+    nav{
+        
+        .nav-link{
+            border-bottom: none;
+        }
+    }
+    
+    section.intro {
         h1{
             font-size: 25px;
         }
@@ -227,13 +248,6 @@ section.contact{
         {
             font-size: 20px;
         }
-        
-    }
-    
-    .nav-link{
-        border-bottom: none;
-    }
-    section.intro {
         .cover{
             display: flex;
             flex-direction: column;
@@ -243,6 +257,9 @@ section.contact{
         }
         .cover > #header{
             margin: 10px 10px;
+        }
+        div.cover img{
+            width: 20rem;
         }
     }
 
@@ -270,4 +287,11 @@ section.contact{
         }
     }
     
+}
+
+@media screen and (max-width: 400px){
+
+    body, html{
+        width: 100%;
+    }
 }
