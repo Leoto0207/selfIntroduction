@@ -25,7 +25,7 @@ app.post('/add_contact', async (req, res) => {
         const {name, company, email, contact} = req.body;
         const newContact = new Contactdb({name, company, email, contact});
         await newContact.save();
-        res.render('/');
+        res.render('index');
     }catch(e){
         console.log("Error", e);
         res.redirect('/');
